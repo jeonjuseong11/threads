@@ -1,0 +1,115 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# --- Dependencies ----------------------------------------------------
+node_modules/
+
+# --- Expo ------------------------------------------------------------
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# --- Native ----------------------------------------------------------
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# --- Android (빌드 파일만 제외, 소스는 유지) ------------------------
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+*.dex
+# Gradle wrapper는 팀 정책에 따라 선택
+# android/gradlew
+# android/gradlew.bat
+# android/gradle/wrapper/gradle-wrapper.jar
+
+# --- iOS (빌드 파일만 제외, 소스는 유지) ----------------------------
+ios/build/
+ios/DerivedData/
+ios/Pods/
+*.ipa
+*.dSYM.zip
+*.dSYM
+# Xcode user settings
+ios/**/*.xcuserstate
+ios/**/xcuserdata/
+
+# --- Metro -----------------------------------------------------------
+.metro-health-check*
+.metro/
+
+# --- Environment Variables -------------------------------------------
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Logs ------------------------------------------------------------
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# --- Build Outputs ---------------------------------------------------
+build/
+dist/
+web-build/
+*.tgz
+*.tar.gz
+
+# --- Development Tools -----------------------------------------------
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing & Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Caches
+.eslintcache
+.prettier-cache
+
+# --- OS Generated Files ----------------------------------------------
+# macOS
+.DS_Store
+*.pem
+# Windows  
+Thumbs.db
+# Linux
+.fuse_hidden*
+
+# --- Runtime Data ----------------------------------------------------
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# --- Temporary Files -------------------------------------------------
+tmp/
+temp/
+.tmp/
+
+# --- Additional React Native Tools -----------------------------------
+# Flipper
+.flipper/
+
+# --- Firebase (선택적) ----------------------------------------------
+# Uncomment if you want to exclude Firebase config files
+# android/app/google-services.json
+# ios/GoogleService-Info.plist
